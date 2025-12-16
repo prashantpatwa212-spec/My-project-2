@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix – Black & White</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-10 py-5">
+    <h1 class="text-3xl font-extrabold tracking-wide">NETFLIX</h1>
+    <button class="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition">
+      Sign In
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center min-h-[80vh] px-4">
+    <h2 class="text-5xl md:text-6xl font-bold mb-6">
+      Unlimited movies, TV shows and more
+    </h2>
+    <p class="text-xl mb-4">Watch anywhere. Cancel anytime.</p>
+    <p class="mb-6">Ready to watch? Enter your email to create or restart your membership.</p>
+
+    <div class="flex flex-col md:flex-row gap-4">
+      <input 
+        type="email" 
+        placeholder="Email address" 
+        class="px-5 py-3 w-72 text-black rounded"
+      />
+      <button class="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-300 transition">
+        Get Started →
+      </button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="border-t border-gray-700 py-16 px-10 grid md:grid-cols-3 gap-10 text-center">
+    <div>
+      <h3 class="text-2xl font-semibold mb-3">Enjoy on your TV</h3>
+      <p class="text-gray-300">Watch on smart TVs, PlayStation, Xbox, Chromecast, and more.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl font-semibold mb-3">Download to watch offline</h3>
+      <p class="text-gray-300">Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div>
+      <h3 class="text-2xl font-semibold mb-3">Watch everywhere</h3>
+      <p class="text-gray-300">Stream unlimited movies and TV shows on your phone, tablet, and laptop.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-700 py-8 text-center text-gray-400">
+    <p>Netflix Clone (Black & White) – Tailwind CSS</p>
+  </footer>
+
+</body>
+</html>
